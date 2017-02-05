@@ -1,0 +1,81 @@
+/*-----------------------Auxiliar styles for BPC page------------*/
+
+.nav-img{
+	width:auto;
+	height:5em;
+	margin:0 auto 1.5em;
+	background:url("../img/programming-1857236_1280.jpg");
+	background-size:cover;
+	background-repeat: repeat-x;
+	border-radius:.5em;
+}
+
+
+.custom-button, #string-input{
+	text-align:center;
+}
+
+#result, #button-container, #string-input{
+	width:80%;
+	margin:.5rem auto;
+	border:1px solid gray;
+	padding:1rem;
+}
+
+#result{
+	background:whitesmoke;
+	overflow:auto;
+}
+
+
+#string-input{
+	display:block;
+}
+
+.custom-button{
+	color:white;
+	display:inline-block;
+	padding:.3rem;
+	border:2px ridge lightgray;
+	margin:.2rem;
+	border-radius:4px;
+	cursor:pointer;
+}
+
+#action{
+	background: cadetblue;
+}
+
+#action:hover{
+	background: green;
+}
+
+#predefined{
+	background: indianred;
+}
+
+#predefined:hover{
+	background: crimson;
+}
+
+#substrings{
+	background: darkblue;
+}
+
+#substrings:hover{
+	background: deepskyblue;
+}
+
+
+.code-presentation{
+	/* background:hsla(30, 50%, 60%, 0.5);
+	background: -webkit-linear-gradient(left, hsla(30, 50%, 60%, 0.5), #E6E6FA);
+	background: -o-linear-gradient(right, hsla(30, 50%, 60%, 0.5), #E6E6FA);
+	background: -moz-linear-gradient(right, hsla(30, 50%, 60%, 0.5), #E6E6FA);
+	background: linear-gradient(to right, hsla(30, 50%, 60%, 0.5), #E6E6FA); */
+	
+	font-style:italic;
+	font-weight:700;
+	padding:10px;
+	border-radius:5px;
+}

@@ -1,0 +1,113 @@
+html{
+	box-sizing:border-box;
+}
+*, *:before, *:after{
+box-sizing:inherit;
+}
+/* header styling */
+
+.body{
+	font-family: 'Merriweather Sans', Arial, sans-serif;
+	font-size:1.5em;
+}
+
+.header > :not(nav){
+	text-align:center;
+}
+
+.header{
+	border-bottom:1px solid lightgray;
+	padding:0 0 3em;
+}
+
+.floated-left{
+float:left;
+}
+
+.floated-right{
+float:right;
+}
+/* clearfix for float layout */
+
+.group:before, .group:after{
+content:"";
+display:table;
+}
+.group:after{
+clear:both;
+}
+/* cancellation of the item markers for floated lists */ 
+
+.nav ul, .footer ul{
+list-style-type:none;
+padding:1em;
+}
+
+.nav ul li, .footer ul li{
+padding:1em;
+}
+
+.two-cols{
+display:inline-block;
+vertical-align:top;
+width:50%;
+/*border:1px solid red;*/
+margin:0;
+background:lavender;
+}
+
+.wrapper{
+	width:90%;
+	margin:0 auto;
+}
+
+div[class*="col"]{
+	padding:.5em;
+}
+section[class*="row"]{
+	border-bottom:1px solid lightgray;
+}
+
+.myTable{
+	width:100%;
+	border-bottom:1px solid lightgray;
+}
+
+.myTable td, .myTable th{
+	text-align:center;
+	color:steelblue;
+	padding:.3em;
+}
+
+.myTable th{
+	font-size:32px;
+}
+
+.col-md-3 > a{
+	padding:.3em;
+}
+
+.my-img{
+	border:1px solid lightslategray;
+	padding:2px;
+}
+
+.parade{
+	display:inline-block;
+	padding:.3em;
+	margin:1px;
+	border-radius:.3em;
+	background:royalblue;
+	color:#fff;
+}
+
+.parade:hover{
+	background:deepskyblue;
+	cursor:pointer;
+}
+
+@media (max-width:767px){
+	.body{
+		font-size:1.25em;
+	}
+}

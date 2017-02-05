@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Basic algorithms in programming</title>
+		<link rel="stylesheet" href="../../css/styles.css">
+		<link rel="stylesheet" href="css/auxBpcStyles.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<link rel="icon" href="../../img/army-hat-16-173500.png">
+	</head>
+	<body>
+	<nav class="clearfix">
+		<h1 id="page-top">Basic algorithms and programming concepts</h1>
+		<div class="nav-img"></div>
+		<div class="menu-button">
+			<div class="small-bar"></div>
+			<div class="small-bar"></div>
+			<div class="small-bar"></div>
+			<div class="small-bar"></div>
+			<div class="small-bar"></div>
+		</div>
+		<div class="cap-icon">
+			<a href="#"><img src="../../img/army-hat-152-173500.png" alt="army style cap icon"></a>
+		</div>
+		<ul class="nav-list">
+			<li><a href="#recursion">Recursion</a></li>
+			<li><a href="#long-sstr">Longest substring</a></li>
+			<li><a href="#fibonacci">Fibonacci</a></li>
+			<li><a href="../../index.html">Home</a></li>
+		</ul>
+	</nav>
+	<main>
+		<div class="clearfix">
+			<section class="col-lg-5 col-md-6">
+				<h2 id="recursion">Science, art and recursive algorithms</h2>
+				
+				<p>According to the scientists, elementary particles vibrations sustain the theory of the Multiverse, an universe made up of an infinite number of universes 'almost' like the one we live in, but slightly different in a way.</p>
+				
+				<p class="clearfix">
+				<img src="img/andromeda-galaxy-755442_1280.jpg" alt="The Andromeda Galaxy" class="img-to-left">
+				In a parallel universe, the corresponding individual of John, a plumber from our universe, could be a plumber as well, but one who won the big lottery prize and then moved with his family on a terraformed, ecological Mars. Moreover, a famous contemporary artist like Beyonc&eacute; Knowles-Carter could be an artist, too, but in a different niche subgenre, like heavy metal or thrash metal. She might be less famous and her family name might be Knowles-CRater instead. But the model would work due to the hypothesis that each proton of each atom from our universe corresponds to an unique proton of an unique atom in each other parallel universe, even if they won't share the same relative position at the same time. (If they could share the same position at the same time, there would be no parallel universe. The world itself would become an infinite stack of identical bricks lying on top of each other, that would eventually collapse under their own weight with a big bang. Not to mention that <a href="https://en.wikipedia.org/wiki/Werner_Heisenberg" target="_blank">Heisenberg</a> would be very upset...) </p>
+				
+				<p>
+				To cut it short, the next application allows you to find out what would be the name of Beyonce Knowles-Carter (or Justin Bieber, if you're a fan of him) if she or he were born in a parallel universe. It's a so called <strong>anagram generator</strong>. It deals with concepts such as "algorithm", "recursion", "iteration" and other stuff that may sound weird but it effectively generates the whole range of words that could be formed using just the letters of the original word (or name). <br />
+				<strong>Use it with caution!</strong> For a five letter word, the program will list 120 words, identical or not.(<em>If all letters are different, the words will be different.)</em>. But for a 9 letter word, it will generate 362880 words and I suppose that you wouldn't want to spend your next four days counting all these words, even at a counting speed of one word per second. Would you? :-)</p>
+
+				<p id="generator">PS: I didn't test the code for words containing more than nine letters. However, the form below accepts any input from 1 to 12 latin letters, underscore or digits. No spaces or special characters allowed!</p>
+				
+				<form name="annForm">
+					Enter a name or use the default value: <br />
+					<br />
+					<input type="text" name="aname" value="Carter">
+					<button id="anagramator" type="button">Click here</button>
+				</form>
+				<div id="anagram-collector"></div>
+				
+			</section>
+			
+			<section class="col-lg-7 col-md-6">
+				<h2 id="long-sstr">Longest substring in alphabetical order</h2>
+				
+				<p>The following exercise is part of a mandatory assignment from a Computer Science course delivered by the edX platform. The original requirements are for implementation in Python, but the solution can be written in any programming language, using loops and decision branches.</p>
+				
+				<div class="clearfix">
+				
+				<img src="img/typewriter-726965_1280.jpg" alt="Old typewriter" class="img-to-right">
+				
+				<p>In short, given a certain string of characters s, the student is asked to write a program that prints the longest substring of s in which the letters occur in alphabetical order. For example, if s = &apos;azcbobobegghakl&apos;, then the program should print <strong>&quot;Longest substring in alphabetical order is: beggh&quot;</strong></p>
+
+				<p>In the case of ties, the first substring should be printed. For example, if s = &apos;abcbcd&apos;, then the program should print <strong>&quot;Longest substring in alphabetical order is: abc&quot;</strong>. The following implementation does a little more. After entering a string of characters in field below, you have three options. </p>
+				
+				</div>
+				
+				<p>Clic <strong>&quot;Action&quot;</strong> and the <mark>longest sequence in alphabetical order</mark> will be displayed. If there's more than one such substring (sequence), only the first will be displayed, according to problem requirements.</p>
+				
+				<p>Click on <strong>&quot;Predefined&quot;</strong> and a collection of predefined strings will be passed in to the app. The longest substring in alphabetical order will be displayed for each string of the collection.</p>
+				
+				<p>Click on <strong>&quot;Substrings&quot;</strong> to display all the substrings of the provided string.</p>
+				
+				<input id="string-input" type="text" name="string" placeholder="max 50 characters" maxlength="50" size="50">
+				<div id="button-container">
+					<div id="action" class="custom-button">Action!</div>
+					<div id="predefined" class="custom-button">Predefined</div>
+					<div id="substrings" class="custom-button">Substrings</div>
+				</div>
+			<p id="result">Here goes the result!</p>
+				
+			</section>
+			
+		</div>	
+		<div class="clearfix">
+			<section class="col-lg-12">
+				
+				<h2 id="fibonacci">The Fibonacci sequence, recursive and iterative</h2>
+				<div class="clearfix">
+				
+					<img src="img/fibonacci-1601158_640.png" alt="Fibonacci vector graphic" class="img-to-left">
+					
+					<p><a href="https://en.wikipedia.org/wiki/Fibonacci_number">The Fibonacci numbers</a> are well explained over the internet, thus they won't be analysed here. Their role is important in understanding some concepts such as iterative calculus and recursive function calls. In short, the Fibonacci numbers can be generated with the following recursion formula: Fn = Fn-1 + Fn-2. The first Fibonacci number is 0 and the second Fibonacci number is 1. So, the third number in sequence will be (1 + 0 =) 1, the fourth number, 2, the fifth, 3 etc.
+					</p>
+					
+					<p><strong>The iterative method</strong> to determine the n-th Fibonacci number requires a loop in which </p>
+					
+					<p class="code-presentation"> i) res = a + b; ii) b = a; iii) a = res,</p> 
+					
+					<p>for each iteration from 3 to n, including n. res,  a and b are variables of integer type. The initial values for a and b are 0 and 1, the first two Fibonacci numbers.
+					</p>
+					
+					<p><strong>The recursive method</strong> has a minor advantage over the iterative method: it doesn't need a loop to perform the 
+					calculus. This, however, comes with a cost: the execution time for a small piece of code increases rapidly to seconds or tens of seconds, which in programmers' world is considered an undesirable, ineffective behavior. The reason behind this ineffectiveness is the so-called binary tree. Let's consider the following recursive implementation:</p>
+				</div>
+					<p class="code-presentation">
+						function F(z) {<br>
+						if(1 === z || 2 === z) return z - 1;<br> 
+						return F(z - 1) + F(z - 2);<br>
+						}
+					</p>
+				<div class="clearfix">
+				
+					<img src="img/fibonacci-1079776_640.jpg" alt="Fibonacci sequence" class="img-to-right">
+					
+					<p>If we want to determine the 4th Fibonacci number, we'll call the function F with the argument 4. The function will have to return F(3) + F(2). 
+					Each of the two members of the expression is a function call made by the function itself, with a specific argument. F(2) evaluates to 1 but F(3) leads to other two function calls. When called with the argument 3, the function has to return F(2) + F(1), which evaluates to 1 and 0 respectively. We can count easily 5 function calls. For F(5) we get 9 function calls, for F(6), 15 calls etc. The recursive method is not recommended in such cases: the execution time grows at an exponential rate.
+					</p>
+					
+					<p><strong>The Binet formula</strong> is another method to determine the Fibonacci numbers.</p>
+					
+					<p class="code-presentation">
+						F(n) = ( (1 + &#8730; 5)<sup>n-1</sup> - (1 - &#8730; 5)<sup>n-1</sup> ) / (2<sup>n</sup> * &#8730; 5)
+					</p>
+					
+					<p>It requires a 'floating point to integer' conversion (a ceil rounding), since the result is a real number. The Binet method and the iterative method have reasonable execution times. The last option in the panel allows the user to check if a certain number belongs to the Fibonacci sequence. It relies on the theorem stating that a certain <strong>x</strong> value belongs to the Fibonacci numbers if and only if </p>
+					
+					<p class="code-presentation">5*x<sup>2</sup> +/- 4</p> 
+					
+					<p>is a perfect square. However, since precision is limited, the program might not be effective for very large output values. As you may notice, the Binet method and the iterative one deliver different outcomes for, let's say, the 100th Fibonacci number: <b>218922995834555140000</b> and <b style="color:#00f">218922995834555200000</b>, respectively.
+					</p>
+				</div>
+				
+				<form name="fibForm">
+				Enter an integer number and select an option:<br>
+				<input type="text" name="valueToPass"><br>
+				<select name="task">
+					<option value="iter" selected="selected">Iterative Fibonacci
+					<option value="recur">Recursive Fibonacci
+					<option value="bin">Binet Formula
+					<option value="ver">Is it Fibonacci number?
+				</select><br>
+				<input type="button" id="fiboButton" value="Go">
+				</form>
+				
+				<p id="displayFibo"></p>
+				
+			</section>
+		</div>
+	
+	</main>
+	
+	<footer class="clearfix">
+		<section class="col-lg-12">
+	
+			<h2>Necessary footnote</h2>
+			<p>The background image of the nav element, the army hat icon, the picture of the Andromeda Galaxy, the old typewriter picture and the Fibonacci graphic compositions may be used freely, according to those stated on their <a href="https://pixabay.com/" target="_blank">site of origin.</a> The algorithms mentioned on this page are public knowledge and don't require attribution. Some public sources were backlinked for further readings. The code for implementing this page's functionality was written by the page author.</p>
+		</section>
+	</footer>
+	<script src="../../js/script.js"></script>
+	<script src="js/anagramator.js"></script>
+	<script src="js/substrings.js"></script>
+	<script src="js/fibonacci.js"></script>
+	<span class="fixed-button"><a href="#page-top">Top</a></span>
+	</body>
+</html>

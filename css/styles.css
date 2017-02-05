@@ -1,0 +1,264 @@
+/* Personal repository for educational purposes - page styles */
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	padding:0px;
+	margin:0px;
+	background:aliceblue;
+	font-family:'Roboto Condensed', sans-serif;
+} /* browser defaults reset */
+
+
+h1{
+	margin-bottom:2em;
+	font-size:2.2em;
+}
+
+h1, h2, h3{
+	text-align:center;
+	text-shadow:1px 2px 4px whitesmoke;
+}
+/*---------------------Nav section styles -----------------*/
+nav{
+	padding:1em;
+	margin:.0 2em;
+	position: relative;
+	background: lightskyblue;
+	background: -webkit-linear-gradient(lightskyblue, aliceblue);
+	background: -o-linear-gradient(lightskyblue, aliceblue);
+	background: -moz-linear-gradient(lightskyblue, aliceblue);
+	background:linear-gradient(lightskyblue, aliceblue);
+}
+.menu-button{
+	display:inline-block;
+	border:2px solid black;
+	margin-right:1em;
+	float:right;	
+}
+
+.menu-button:hover{
+	border:3px solid navy;
+	background:whitesmoke;
+	cursor:pointer;
+	
+}
+
+.small-bar{
+	width:36px;
+	height:5px;
+	margin:2px;
+	background:black;
+}
+
+.cap-icon{
+	display:inline-block;
+	position:relative;
+	top:-2em;
+}
+
+.nav-list, .nav-list > li{
+	display: none;
+	vertical-align:top;
+	list-style-type: none;
+	margin:.2em;
+}
+
+.nav-list > li > a{
+	text-decoration:none;
+	color:white;
+}
+
+.nav-list > li{
+	background:cadetblue;
+	padding:.6em;
+	border-radius:.3em;
+	text-align:center;
+}
+
+.nav-list > li:hover{
+	background:seagreen;
+	border:2px solid navy;
+}
+
+.clearfix:before, .clearfix:after{
+	display:table;
+	content:"";
+}
+
+.clearfix:after{
+	clear:both;
+}
+
+/*-------------------------Main section styles-------------------------*/
+main{
+	background:lavender;
+	background: -webkit-linear-gradient(aliceblue, lavender);
+	background: -o-linear-gradient(aliceblue, lavender);
+	background: -moz-linear-gradient(aliceblue, lavender);
+	background:linear-gradient(aliceblue, lavender);
+	padding:1em;
+	margin:0 2em;
+}
+
+main section[class^="col"]{
+	padding:.7em;
+	border-top:2px ridge lightgray;
+	border-right:2px ridge lightgray;
+	border-top-right-radius:.5em;
+}
+
+main section[class^="col"] p{
+	text-indent:1em;
+}
+
+main section[class^="col"] a{
+	text-decoration:none;
+}
+
+.img-to-left{
+	float:left;
+}
+
+.img-to-right{
+	float:right;
+}
+
+.img-to-left, .img-to-right{
+	max-width:40%;
+	height:auto;
+	margin:1em;
+	border-radius:.5em;
+}
+
+.contact-info{
+	padding:.5em;
+	background:linear-gradient(lightblue, lavender);
+}
+
+.custom-iframe{
+	display:block;
+	max-width:90%;
+	height:10em;
+	margin:1em;
+	border-radius:.5em;
+}
+
+.fixed-button{
+	display:inline-block;
+	padding:.5em;
+	position:fixed;
+	top:50vh;
+	right:1em;
+	background:rgba(144,238,144,.7);
+	border-radius:50%;
+}
+
+.fixed-button > a{
+	text-decoration:none;
+	color:white;
+}
+
+.fixed-button:hover{
+	background:rgba(0,255,0, .7);
+	border:2px ridge lightgray;
+}
+/*------------------------Footer styles-------------------------*/
+
+footer section[class^="col"]{
+	padding:.7em;
+	border-bottom:2px ridge lightgray;
+	border-right:2px ridge lightgray;
+	border-bottom-right-radius:.5em;	
+}
+
+footer section[class^="col"] a{
+	text-decoration:none;
+}
+
+footer{
+	background:deepskyblue;
+	background: -webkit-linear-gradient(lavender, deepskyblue);
+	background: -o-linear-gradient(lavender, deepskyblue);
+	background: -moz-linear-gradient(lavender, deepskyblue);
+	background:linear-gradient(lavender, deepskyblue);
+	padding:1em;
+	margin:0 2em;
+}
+
+/*-------------------------Media queries-------------------------*/
+
+@media (min-width:992px){
+	.nav-list, .nav-list > li{
+		display:inline-block !important;
+	}
+	
+	.menu-button{
+		display:none;
+	}
+	
+	.col-lg-12{
+		float:left;
+		width:100%;
+	}
+	
+	.col-lg-7{
+		float:left;
+		width:58.3333%;
+	}
+	
+	.col-lg-5{
+		float:left;
+		width:41.6666%;
+	}
+}
+
+@media (min-width:768px) and (max-width:991px){	
+	.nav-list{
+		width:60%;
+		margin:.2em auto;
+	}
+		
+	.col-md-6{
+		float:left;
+		width:50%;
+	}
+	
+	body{
+		font-size:.95em;
+	}
+}
+
+@media (min-width:480px) and (max-width:767px){	
+	.nav-list{
+		width:80%;
+		margin:2em auto;
+	}
+	
+	.img-to-left, .img-to-right{
+		max-width:50%;
+	}
+	
+	body{
+		font-size:1.1em;
+	}
+}
+
+@media (max-width:479px){
+	.img-to-left, .img-to-right{
+		display:block;
+		max-width:100%;
+		margin:1em auto;
+		float:none;
+	}
+	
+	body{
+		font-size:.95em;
+	}
+	
+	nav, main, footer{
+		margin:0 .5em;
+	}
+}
